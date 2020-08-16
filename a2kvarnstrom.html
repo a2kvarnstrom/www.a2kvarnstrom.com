@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This website was made by a2kvarnstrom">
+        <meta name="author" content="a2kvarnstrom">
+        <meta name="keywords" content="HTML, CSS, JavaScript, a2kvarnstrom">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>a2kvarnstrom</title>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="nav-wrapper">
+                    <div class="left-side">
+                        <div class="nav-link-wrapper active-nav-link">
+                            <div class="home">
+                                <a href="a2kvarnstrom.html">Home</a>
+                            </div>
+                        </div>
+                        <div class="nav-link-wrapper">
+                            <div class="about">
+                                <a href="about.html">About</a>
+                            </div>
+                        </div>
+                        <div class="nav-link-wrapper more">
+                            <div class="links">
+                                <a href="about_a2kvarnstrom.html">Other Pages and Links</a>
+                            </div>
+                        </div>
+                        <div class="nav-link-wrapper more">
+                            <div class="game center">
+                                <a href="gamecenter.html">Game Center</a>
+                            </div>
+                        </div>
+                        <div class="nav-link-wrapper">
+                            <div class="ideas">
+                                <a href="ideas.html">Ideas</a>
+                            </div>
+                        </div>
+                        <div class="nav-link-wrapper">
+                            <div class="my-channel">
+                                <a href="https://www.youtube.com/channel/UCsfWm8UUP3ln9__EyV3azkQ" target="_blank">My youtube channel</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="brand">
+                            <div>
+                                <div class="home-link-wrapper">
+                                    <a href="a2kvarnstrom.html">A2KVARNSTROM</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="content-wrapper">
+                    <div class="portfolio-items-wrapper">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: URL(imgs/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);"></div>
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="imgs/w3schools.png">
+                                </div>
+                                <div class="subtitle">
+                                    Learn HTML, CSS and JavaScript for FREE!
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: URL(imgs/leon-bublitz-uDTzfsGJihw-unsplash.jpg);"></div>
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="imgs/a9b50bff2eb7f69ae0aec375a2704452.png">
+                                </div>
+                                <div class="subtitle">
+                                    Watch FREE videos from all over the world!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: URL(imgs/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);"></div>
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="imgs/w3schools.png">
+                                </div>
+                                <div class="subtitle">
+                                    Learn HTML, CSS and JavaScript for FREE!
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer></footer>
+        </div>
+    </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+        })
+    </script>
+</html>
